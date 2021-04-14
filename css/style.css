@@ -1,0 +1,140 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+/* We can use the CSS @import rule to tell the CSS engine to include an external style sheet. In this case we're using it to import our fonts from Google.*/
+
+/* GLOBALS */
+/* We are overriding the browser's default styles to make them work for us! */
+:root {
+    box-sizing: border-box;
+    font-size: 100%;
+    /* We make the assumption that a web browser's default font-size is 16px. This setting ties our relative units of measurement to the browser's default size. */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    /* We assume this is 16px for the purpose of future calculation */
+    line-height: 1.4;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 1em;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul,
+ol {
+    padding: 0 0 1rem 0;
+    list-style-position: inside;
+}
+
+ol li {
+    margin-top: 0.25rem;
+}
+
+/* CLASS BASED STYLES */
+
+/* Layout */
+.section {
+    padding: 1.5rem 1rem 0;
+    overflow: hidden;
+}
+
+.intro {
+    background-color: #d6cdd3;
+    padding-bottom: 1rem;
+}
+
+.fixed-width {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    max-height: 300px;
+    overflow: hidden;
+    background-color: #8a6e82;
+
+}
+
+.header-img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+/* Navigation */
+.heading-main {
+    color: #fff;
+    margin: 0;
+    padding: 1rem;
+}
+
+.heading-main span {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+/* Images */
+/* The following class is known as a utility or helper class. It has one job and does it very well! */
+.img-round {
+    border-radius: 0.25rem;
+}
+
+.figure {
+    margin: 1rem 0;
+}
+
+.figure img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.variation {
+    background-color: #dcdcdc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 0.25em;
+}
+
+/* Footer */
+.footer {
+    background-color: #4c4c4c;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.footer p {
+    line-height: 1.2;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.credit {
+    margin-bottom: 0;
+    color: #ccc;
+}
