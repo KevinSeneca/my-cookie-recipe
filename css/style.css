@@ -18,7 +18,7 @@
 
 body {
     margin: 0;
-    background-color: #fff;
+    background-color: rgb(76, 153, 76);
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
     /* We assume this is 16px for the purpose of future calculation */
@@ -34,6 +34,7 @@ h5,
 h6 {
     margin: 0 0 1em;
 }
+
 
 p {
     margin: 0 0 1rem;
